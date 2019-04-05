@@ -17,6 +17,10 @@
     Column main definition
 =============================*/
 
+h1  {
+  text-align: center;
+}
+
 .main-container {
   margin: 25px;
   border: 25px;
@@ -51,14 +55,6 @@
 .instagram  {
     font-family: 'Nunito', sans-serif;  
     background-color: rgba(165, 77, 42, 0.815); 
-}
-
-
-.tittle {
-    content: " " ;
-    margin-left: 425px;
-	display: table;
-    clear: both;  
 }
 
 .fab  {
