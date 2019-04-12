@@ -1,0 +1,457 @@
+//
+// * All Rights Reserved
+// * This software is proprietary information of
+// * Intelligent Sense
+// * Use is subject to license terms.
+// * Filename: _media-queries.scss
+//
+
+// *
+// * Author:      kchaves@intelligentsense.com
+// * Date:        28/10/2013
+// * Description: Media queries partial. Add here all the media queries
+//                
+// 
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+   /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+   /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+   /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+   /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+   /* Styles */
+}
+
+@media only screen and (max-width : 1224px) {
+   /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+   
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+   /* Styles */
+}
+
+/* Retina Display ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+   /* Styles */
+}
+
+/* =====================
+   Mobile phones
+  ====================*/ 
+@media only screen and (max-width: 480px) {
+    .header__block  {
+        height: 77px;
+        left: 0%;
+        right: 0%;
+        top: 100px;
+        background: #000000;
+
+        li {
+            display: none
+        }
+    }
+
+    .main__block  {
+        height: 304px;
+        background-image: url("../img/banner-mobile.png");
+    
+        h1  {
+            position: absolute;
+            margin-top: 80%;
+            margin-left: 5%;
+            font-family: Arial;
+            font-size: 24px;
+            line-height: normal;
+            
+            color: black;   
+        }
+    
+    }
+
+    .search__block{
+
+        .search  {
+            position: absolute;
+            background: #FFFFFF;
+            border: 1px solid #8E8E8E;
+            box-sizing: border-box;
+            border-radius: 20px;
+            width: 80%;
+            height: 5%;
+            left: 10%;
+            top: 65%;
+            font-family: Arial;
+            font-size: 18px;
+            line-height: normal;
+            color: #8E8E8E;
+
+        }
+
+        .image  {
+            position: absolute;
+            width: 23px;
+            height: 23px;
+            right: 50px;
+            top: 66%;
+            margin-right: 10%;
+        }
+
+    }
+
+    
+    .film__block  {
+        background: #FFFFFF;  
+        margin-top: 40%;
+
+        h2  {
+            /*font*/
+            margin-left: 5%;
+            font-family: Arial;
+            font-size: 18px;
+            line-height: normal;
+
+            /* borde-light */
+            border-bottom: 1px solid #D8D8D8;
+        }
+
+
+        p  {
+            .image  {
+                float: left;
+            }
+            margin-left: 10%;
+            width: 50%;
+            height: 50%;
+            left: 164px;
+            top: 583px;
+
+            font-family: Arial;
+            font-size: 12px;
+            line-height: normal;
+            text-align: justify;
+
+            color: #000000;
+
+        }
+
+    
+    }
+
+  .footer__block  {
+
+    position: absolute;
+    margin-top: 90%;
+    width: 360px;
+    height: 88px;
+    left: 0px;
+    top: 1054px;
+    
+    background: #000000;
+
+      p  {
+
+        position: absolute;
+        margin-top: 90%;
+        width: 184px;
+        height: 28px;
+        left: 21px;
+        top: 1068px;
+        
+        font-family: Arial;
+        font-size: 12px;
+        line-height: normal;
+        
+        color: #FFFFFF;   
+
+      }
+
+      
+
+  }
+}
+
+
+
+  /* =====================
+   Desktop
+   ====================*/
+   @media only screen and (min-width: 768px) {
+
+    .header-container  {
+        position: absolute;
+        height: 77px;
+        left: 0%;
+        right: 0%;
+        top: 0px;
+        background: #000000;
+    }
+
+
+    .main-block  {
+        position: absolute;
+        width: 1280px;
+        height: 500px;
+        left: 0px;
+        top: 77px;
+    
+        h1  {
+            position: absolute;
+            width: 591px;
+            height: 42px;
+            left: calc(50% - 591px/2 - 252.5px);
+            top: calc(50% - 42px/2 - 287.5px);
+            
+            font-family: Arial;
+            font-size: 36px;
+            line-height: normal;
+            
+            color: #FFFFFF;   
+        }
+    
+        .search {
+            position: absolute;
+            height: 44px;
+            left: 7.42%;
+            right: 50.55%;
+            top: 382px;
+            
+            background: #FFFFFF;
+            border: 1px solid #8E8E8E;
+            box-sizing: border-box;
+            border-radius: 20px; 
+    
+        }
+    }
+    
+    .film__block  {
+        position: absolute;
+        top: 46.95%;
+        bottom: 0%;
+    
+        background: #FFFFFF;  
+    
+        .film  {
+            position: absolute;
+            width: 360px;
+            height: 242px;
+            left: 68px;
+            top: 633px;
+            background: #FFFFFF;
+        }
+
+        h2  {
+            /*font*/
+            font-family: Arial;
+            font-size: 18px;
+            line-height: normal;
+
+            /* Line */
+            position: absolute;
+            width: 313px;
+            height: 0px;
+            left: 23px;
+            top: 574px;
+
+            /* borde-light */
+            border: 1px solid #D8D8D8;
+        }
+
+    }
+
+  }
+
+
+
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+   nav {
+
+        a {
+                float: left;
+                width: 27%;
+                margin: 0 1.7%;
+                padding: 25px 2%;
+                margin-bottom: 0;
+        }
+
+        li:first-child a {
+                margin-left: 0;
+        }
+
+        li:last-child a {
+                margin-right: 0;
+        }
+   }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+   .main {
+        article {
+                float: left;
+                width: 57%;
+            }
+
+        aside {
+                float: right;
+                width: 28%;
+            }
+   }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
