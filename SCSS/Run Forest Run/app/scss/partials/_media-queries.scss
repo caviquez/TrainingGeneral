@@ -130,49 +130,92 @@
     }
 
     
-    .film__block  {
-        background: #FFFFFF;  
+    .agent__block  {
         margin-top: 40%;
+        .single__agent  {
+            background: #FFFFFF;  
+            margin-top: 9%;
+            .agent  {
+                /*font*/
+                margin-left: 5%;
+                font-family: Arial;
+                font-size: 18px;
+                line-height: normal;
 
-        h2  {
-            /*font*/
-            margin-left: 5%;
-            font-family: Arial;
-            font-size: 18px;
-            line-height: normal;
+                /* borde-light */
+                border-bottom: 1px solid #D8D8D8;
 
-            /* borde-light */
-            border-bottom: 1px solid #D8D8D8;
-        }
-
-
-        p  {
-            .image  {
-                float: left;
+                .certified  {
+                    margin-left: 40%;
+                    left: 60%;
+                    right: 14.03%;
+                    top: 4.96%;
+                    bottom: 42.12%;
+                    border-bottom-color: #000000;
+                }
             }
-            margin-left: 10%;
-            width: 50%;
-            height: 50%;
-            left: 164px;
-            top: 583px;
 
-            font-family: Arial;
-            font-size: 12px;
-            line-height: normal;
-            text-align: justify;
 
-            color: #000000;
+            p  {
+                .image  {
+                    float: left;
+                    width: 126px;
+                    height: 167px;
+                }
+                margin-left: 10%;
+                width: 80%;
+                height: 50%;
+                left: 164px;
+                top: 583px;
 
+                font-family: Arial;
+                font-size: 95%;
+                line-height: normal;
+                text-align: justify;
+
+                color: #000000;
+
+            }
+
+            .footer__agent  {
+                display:flex;
+                margin-top: 5%;
+                .btn  {
+                    margin-left: 10%;
+                    margin-right: 15%;
+                    background: #000000;
+                    border-radius: 18px;
+                    width: 30%;
+                    left: 150%;
+                    top: 300%;
+                    font-family: Arial;
+                    font-size: 100%;
+                    line-height: normal;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+        
+                h2  {
+                    margin-left: 10%;
+                    margin-top: 5%;
+                    height: 17px;
+                    left: 23px;
+                    top: 720px;
+
+                    font-family: Arial;
+                    font-size: 90%;
+                    line-height: normal;
+        
+                    color: #000000;
+                }
+
+            }
         }
-
-    
     }
 
   .footer__block  {
-
-    position: absolute;
-    margin-top: 90%;
-    width: 360px;
+    margin-top: 10%;
+    width: 100%;
     height: 88px;
     left: 0px;
     top: 1054px;
@@ -180,13 +223,10 @@
     background: #000000;
 
       p  {
-
-        position: absolute;
-        margin-top: 90%;
-        width: 184px;
+        margin-top: 5%;
+        width: 100%;
         height: 28px;
-        left: 21px;
-        top: 1068px;
+        top: 5%;
         
         font-family: Arial;
         font-size: 12px;
@@ -196,8 +236,13 @@
 
       }
 
-      
-
+      h5  {
+        font-family: Arial;
+        font-size: 12px;
+        line-height: normal;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+      }
   }
 }
 
