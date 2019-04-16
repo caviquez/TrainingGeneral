@@ -69,143 +69,125 @@
 /* =====================
    Mobile phones
   ====================*/ 
-@media only screen and (max-width: 480px) {
+  @media only screen and (min-width: 310px) {
     .header__block  {
         height: 77px;
-        left: 0%;
-        right: 0%;
-        top: 100px;
         background: #000000;
 
         li {
             display: none
         }
+
+        .logo {
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        .menu  {
+            position: absolute;
+    right: 8px;
+}
+            height: 73px;
+            width: 73px;
+        }
     }
 
     .main__block  {
-        height: 304px;
+        height: 250px;
         background-image: url("../img/banner-mobile.png");
-    
-        h1  {
-            position: absolute;
-            margin-top: 80%;
-            margin-left: 5%;
-            font-family: Arial;
-            font-size: 24px;
-            line-height: normal;
-            
-            color: black;   
-        }
-    
+        background-size: 100%;
+        background-repeat: no-repeat;
+
     }
 
     .search__block{
+        margin-left: 10%;
+
+        h1  {
+            font-size: 24px;
+            line-height: normal;
+            width: 80%;
+            
+            color: black;   
+        }
 
         .search  {
-            position: absolute;
             background: #FFFFFF;
             border: 1px solid #8E8E8E;
             box-sizing: border-box;
             border-radius: 20px;
-            width: 80%;
-            height: 5%;
-            left: 10%;
-            top: 65%;
-            font-family: Arial;
+            width: 90%;
+            height: 44px;
             font-size: 18px;
             line-height: normal;
             color: #8E8E8E;
+            text-indent: 10px;
 
         }
 
         .image  {
-            position: absolute;
             width: 23px;
             height: 23px;
-            right: 50px;
-            top: 66%;
-            margin-right: 10%;
+            margin-left: -40px;
+            margin-bottom: 5px;
         }
 
     }
 
     
     .agent__block  {
-        margin-top: 40%;
+        width: 90%;
+        margin-left: 6%;
+
         .single__agent  {
-            background: #FFFFFF;  
-            margin-top: 9%;
-            .agent  {
-                /*font*/
-                margin-left: 5%;
-                font-family: Arial;
-                font-size: 18px;
-                line-height: normal;
+            margin-top: 10px;
 
-                /* borde-light */
+            .header__agent  {
+                display: flex;
+                justify-content: space-around;
                 border-bottom: 1px solid #D8D8D8;
-
-                .certified  {
-                    margin-left: 40%;
-                    left: 60%;
-                    right: 14.03%;
-                    top: 4.96%;
-                    bottom: 42.12%;
-                    border-bottom-color: #000000;
+                h2  {
+                    margin-left: 2%;
+                    font-size: 18px;
+                    line-height: normal;
                 }
+
             }
 
+           .body__agent  {
+               display: flex;
 
             p  {
-                .image  {
-                    float: left;
-                    width: 126px;
-                    height: 167px;
-                }
                 margin-left: 10%;
                 width: 80%;
                 height: 50%;
-                left: 164px;
-                top: 583px;
 
-                font-family: Arial;
-                font-size: 95%;
+                font-size: 12px;
                 line-height: normal;
                 text-align: justify;
 
                 color: #000000;
 
+            
             }
+        }
 
             .footer__agent  {
                 display:flex;
-                margin-top: 5%;
                 .btn  {
-                    margin-left: 10%;
-                    margin-right: 15%;
+                    margin-left: 5%;
                     background: #000000;
                     border-radius: 18px;
-                    width: 30%;
-                    left: 150%;
-                    top: 300%;
-                    font-family: Arial;
-                    font-size: 100%;
-                    line-height: normal;
+                    font-size: 14px;
                     text-align: center;
                     color: #FFFFFF;
+                    width: 156px;
+                    height: 34px;
                 }
         
                 h2  {
-                    margin-left: 10%;
-                    margin-top: 5%;
-                    height: 17px;
-                    left: 23px;
-                    top: 720px;
-
-                    font-family: Arial;
-                    font-size: 90%;
+                    font-size: 14px;
                     line-height: normal;
-        
                     color: #000000;
                 }
 
@@ -214,31 +196,23 @@
     }
 
   .footer__block  {
-    margin-top: 10%;
-    width: 100%;
-    height: 88px;
-    left: 0px;
-    top: 1054px;
+      width: 100%;
+      height: 88px;
+      top: 1054px;
+      display: inline-block;
+      background: #000000;
     
-    background: #000000;
-
       p  {
-        margin-left: 10%;
-        margin-top: 5%;
-        width: 50%;
-        top: 5%;
-        
-        font-family: Arial;
-        font-size: 90%;
+          margin-left: 10px;
+        width: 184px;
+        height: 28px;        
+        font-size: 12px;
         line-height: normal;
-        
         color: #FFFFFF;   
-
       }
 
       h5  {
-        margin-left: 10%;
-        font-family: Arial;
+          margin-left: 10px;
         font-size: 12px;
         line-height: normal;
         text-decoration-line: underline;
@@ -247,10 +221,11 @@
   }
 }
 
+
 /* =====================
    Mobile tablets
    ====================*/
-   @media only screen and (max-width : 1024px) {
+   @media only screen and (min-width : 768px) {
 
     .header__block  {
         height: 50%;
@@ -298,7 +273,6 @@
             height: 5%;
             left: 10%;
             top: 65%;
-            font-family: Arial;
             font-size: 18px;
             line-height: normal;
             color: #8E8E8E;
