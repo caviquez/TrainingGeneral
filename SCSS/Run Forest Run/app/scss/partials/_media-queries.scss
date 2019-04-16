@@ -85,8 +85,7 @@
 
         .menu  {
             position: absolute;
-    right: 8px;
-}
+            right: 8px;
             height: 73px;
             width: 73px;
         }
@@ -228,18 +227,11 @@
    @media only screen and (min-width : 768px) {
 
     .header__block  {
-        height: 50%;
-        top: 100px;
-        background: #000000;
-
-        li {
-            display: none
-        }
+        
     }
 
     .main__block  {
         height: 304px;
-        margin-top: -40%;
         background-image: url("../img/banner.png");
         background-size: 100%;
         background-repeat: no-repeat;
@@ -259,119 +251,24 @@
     
     }
 
-    .search__block  {
+    .search__block{
         position: absolute;
-        top: 40%;
-        margin-left: 10%;
-        width: 90%;
-        .search  {
-            background: #FFFFFF;
-            border: 1px solid #8E8E8E;
-            box-sizing: border-box;
-            border-radius: 20px;
-            width: 80%;
-            height: 5%;
-            left: 10%;
-            top: 65%;
-            font-size: 18px;
+        top: 210px;
+        width: 700px;
+
+        h1  {
+            font-size: 24px;
             line-height: normal;
-            color: #8E8E8E;
+            width: 35%;
+            color:white;   
         }
 
-        .image  {
-            position: absolute;
-            width: 23px;
-            height: 23px;
-            right: 50px;
-            top: 66%;
-            margin-right: 15%;
-        }
-
-     }
+    }
 
     .agent__block  {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-top: 2%;
-        .single__agent  {
-            background: #FFFFFF;  
-            margin-top: 9%;
-            .agent  {
-                /*font*/
-                margin-left: 5%;
-                font-family: Arial;
-                font-size: 18px;
-                line-height: normal;
-
-                /* borde-light */
-                border-bottom: 1px solid #D8D8D8;
-
-                .certified  {
-                    margin-left: 40%;
-                    left: 60%;
-                    right: 14.03%;
-                    top: 4.96%;
-                    bottom: 42.12%;
-                    border-bottom-color: #000000;
-                }
-            }
-
-
-            p  {
-                .image  {
-                    float: left;
-                    width: 126px;
-                    height: 167px;
-                }
-                margin-left: 10%;
-                width: 80%;
-                height: 50%;
-                left: 164px;
-                top: 583px;
-
-                font-family: Arial;
-                font-size: 95%;
-                line-height: normal;
-                text-align: justify;
-
-                color: #000000;
-
-            }
-
-            .footer__agent  {
-                display:flex;
-                margin-top: 5%;
-                .btn  {
-                    margin-left: 10%;
-                    margin-right: 15%;
-                    background: #000000;
-                    border-radius: 18px;
-                    width: 30%;
-                    left: 150%;
-                    top: 300%;
-                    font-family: Arial;
-                    font-size: 100%;
-                    line-height: normal;
-                    text-align: center;
-                    color: #FFFFFF;
-                }
-        
-                h2  {
-                    margin-left: 10%;
-                    margin-top: 5%;
-                    height: 17px;
-                    left: 23px;
-                    top: 720px;
-
-                    font-family: Arial;
-                    font-size: 70%;
-                    line-height: normal;
-        
-                    color: #000000;
-                }
-
-            }
-        }
+        margin-top: 1%;
     }
 
   .footer__block  {

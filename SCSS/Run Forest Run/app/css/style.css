@@ -1,69 +1,861 @@
+/*!
+ * All Rights Reserved
+ * This software is proprietary information of
+ * Intelligent Sense
+ * Use is subject to license terms.
+ * Filename: style.scss
+ */
 /*
-Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
-        on line 222 of /Users/cviquez/Documents/AkureyGeneralTrainning/TrainingGeneral/SCSS/Run Forest Run/app/scss/partials/_media-queries.scss
-        from line 24 of /Users/cviquez/Documents/AkureyGeneralTrainning/TrainingGeneral/SCSS/Run Forest Run/app/scss/style.scss
-
-217:         line-height: normal;
-218:         text-decoration-line: underline;
-219:         color: #FFFFFF;
-220:       }
-221:   }
-222: }
-223: 
-224: 
-225: /* =====================
-226:    Mobile tablets
-227:    ====================*\/
-
-Backtrace:
-/Users/cviquez/Documents/AkureyGeneralTrainning/TrainingGeneral/SCSS/Run Forest Run/app/scss/partials/_media-queries.scss:222
-/Users/cviquez/Documents/AkureyGeneralTrainning/TrainingGeneral/SCSS/Run Forest Run/app/scss/style.scss:24
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:42:in `parse'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:315:in `to_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-/Library/Ruby/Gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/Library/Ruby/Gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Library/Ruby/Gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+ * Author:      kchaves@intelligentsense.com
+ * Date:        28/10/2013
+ * Description: Main COMPASS file. Import all the partials you need here.
+ */
+/**
+* Mixin for image replacement
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  }\": expected selector or at-rule, was \"}\"\A         on line 222 of /Users/cviquez/Documents/AkureyGeneralTrainning/TrainingGeneral/SCSS/Run Forest Run/app/scss/partials/_media-queries.scss\A         from line 24 of /Users/cviquez/Documents/AkureyGeneralTrainning/TrainingGeneral/SCSS/Run Forest Run/app/scss/style.scss\A \A 217:         line-height: normal;\A 218:         text-decoration-line: underline;\A 219:         color: #FFFFFF;\A 220:       }\A 221:   }\A 222: }\A 223: \A 224: \A 225: /* =====================\A 226:    Mobile tablets\A 227:    ====================*/"; }
+/* ===================
+    ALL: Fonts
+   =================== */
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 26, ../scss/partials/_general.scss */
+.clear {
+  clear: both;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+/* line 34, ../scss/partials/_general.scss */
+.header-container {
+  border-bottom: 20px solid black;
+}
+
+/* line 38, ../scss/partials/_general.scss */
+.footer-container,
+.main aside {
+  border-top: 20px solid black;
+}
+
+/* line 43, ../scss/partials/_general.scss */
+.header-container,
+.footer-container,
+.main aside {
+  background: black;
+}
+
+/* line 49, ../scss/partials/_general.scss */
+.title {
+  color: white;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/* line 57, ../scss/partials/_general.scss */
+.ir {
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+  *text-indent: -9999px;
+}
+
+/* line 65, ../scss/partials/_general.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/* line 72, ../scss/partials/_general.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 77, ../scss/partials/_general.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 88, ../scss/partials/_general.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 98, ../scss/partials/_general.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 102, ../scss/partials/_general.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 108, ../scss/partials/_general.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 112, ../scss/partials/_general.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 18, ../scss/partials/_header.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 23, ../scss/partials/_header.scss */
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  font-family: Arial, sans;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: black;
+}
+/* line 37, ../scss/partials/_header.scss */
+nav a:hover,
+nav a:visited {
+  color: white;
+}
+/* line 42, ../scss/partials/_header.scss */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* line 18, ../scss/partials/_footer.scss */
+.footer-container footer {
+  color: white;
+  padding: 20px 0;
+}
+
+/* line 16, ../scss/partials/_content.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #221;
+}
+
+/* line 24, ../scss/partials/_content.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 29, ../scss/partials/_content.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 34, ../scss/partials/_content.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 39, ../scss/partials/_content.scss */
+hr {
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+/* line 49, ../scss/partials/_content.scss */
+h1 {
+  font-family: Arial, sans;
+}
+
+/* line 53, ../scss/partials/_content.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 57, ../scss/partials/_content.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 63, ../scss/partials/_content.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 67, ../scss/partials/_content.scss */
+body {
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+/* line 71, ../scss/partials/_content.scss */
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+/* line 80, ../scss/partials/_content.scss */
+.main {
+  padding: 30px 0;
+}
+/* line 85, ../scss/partials/_content.scss */
+.main article h1 {
+  font-size: 2em;
+}
+/* line 90, ../scss/partials/_content.scss */
+.main aside {
+  color: white;
+  padding: 0px 5% 10px;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+@media only screen and (max-width: 1224px) {
+  /* Styles */
+}
+/* Desktops and laptops ----------- */
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+/* Retina Display ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
+/* =====================
+   Mobile phones
+  ====================*/
+@media only screen and (min-width: 310px) {
+  /* line 73, ../scss/partials/_media-queries.scss */
+  .header__block {
+    height: 77px;
+    background: #000000;
+  }
+  /* line 77, ../scss/partials/_media-queries.scss */
+  .header__block li {
+    display: none;
+  }
+  /* line 81, ../scss/partials/_media-queries.scss */
+  .header__block .logo {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  /* line 86, ../scss/partials/_media-queries.scss */
+  .header__block .menu {
+    position: absolute;
+    right: 8px;
+    height: 73px;
+    width: 73px;
+  }
+
+  /* line 94, ../scss/partials/_media-queries.scss */
+  .main__block {
+    height: 250px;
+    background-image: url("../img/banner-mobile.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* line 102, ../scss/partials/_media-queries.scss */
+  .search__block {
+    margin-left: 10%;
+  }
+  /* line 105, ../scss/partials/_media-queries.scss */
+  .search__block h1 {
+    font-size: 24px;
+    line-height: normal;
+    width: 80%;
+    color: black;
+  }
+  /* line 113, ../scss/partials/_media-queries.scss */
+  .search__block .search {
+    background: #FFFFFF;
+    border: 1px solid #8E8E8E;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 90%;
+    height: 44px;
+    font-size: 18px;
+    line-height: normal;
+    color: #8E8E8E;
+    text-indent: 10px;
+  }
+  /* line 127, ../scss/partials/_media-queries.scss */
+  .search__block .image {
+    width: 23px;
+    height: 23px;
+    margin-left: -40px;
+    margin-bottom: 5px;
+  }
+
+  /* line 137, ../scss/partials/_media-queries.scss */
+  .agent__block {
+    width: 90%;
+    margin-left: 6%;
+  }
+  /* line 141, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent {
+    margin-top: 10px;
+  }
+  /* line 144, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent .header__agent {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #D8D8D8;
+  }
+  /* line 148, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent .header__agent h2 {
+    margin-left: 2%;
+    font-size: 18px;
+    line-height: normal;
+  }
+  /* line 156, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent .body__agent {
+    display: flex;
+  }
+  /* line 159, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent .body__agent p {
+    margin-left: 10%;
+    width: 80%;
+    height: 50%;
+    font-size: 12px;
+    line-height: normal;
+    text-align: justify;
+    color: #000000;
+  }
+  /* line 174, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent .footer__agent {
+    display: flex;
+  }
+  /* line 176, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent .footer__agent .btn {
+    margin-left: 5%;
+    background: #000000;
+    border-radius: 18px;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 156px;
+    height: 34px;
+  }
+  /* line 187, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent .footer__agent h2 {
+    font-size: 14px;
+    line-height: normal;
+    color: #000000;
+  }
+
+  /* line 197, ../scss/partials/_media-queries.scss */
+  .footer__block {
+    width: 100%;
+    height: 88px;
+    top: 1054px;
+    display: inline-block;
+    background: #000000;
+  }
+  /* line 204, ../scss/partials/_media-queries.scss */
+  .footer__block p {
+    margin-left: 10px;
+    width: 184px;
+    height: 28px;
+    font-size: 12px;
+    line-height: normal;
+    color: #FFFFFF;
+  }
+  /* line 213, ../scss/partials/_media-queries.scss */
+  .footer__block h5 {
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: normal;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+  }
+}
+/* =====================
+   Mobile tablets
+   ====================*/
+@media only screen and (min-width: 768px) {
+  /* line 233, ../scss/partials/_media-queries.scss */
+  .main__block {
+    height: 304px;
+    background-image: url("../img/banner.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  /* line 239, ../scss/partials/_media-queries.scss */
+  .main__block h1 {
+    top: 100%;
+    position: sticky;
+    margin-top: 33%;
+    margin-left: 10%;
+    width: 50%;
+    font-family: Arial;
+    font-size: 150%;
+    line-height: normal;
+    color: white;
+  }
+
+  /* line 254, ../scss/partials/_media-queries.scss */
+  .search__block {
+    position: absolute;
+    top: 210px;
+    width: 700px;
+  }
+  /* line 259, ../scss/partials/_media-queries.scss */
+  .search__block h1 {
+    font-size: 24px;
+    line-height: normal;
+    width: 35%;
+    color: white;
+  }
+
+  /* line 268, ../scss/partials/_media-queries.scss */
+  .agent__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1%;
+  }
+
+  /* line 274, ../scss/partials/_media-queries.scss */
+  .footer__block {
+    margin-top: 10%;
+    width: 100%;
+    height: 88px;
+    left: 0px;
+    top: 1054px;
+    background: #000000;
+    display: flex;
+  }
+  /* line 284, ../scss/partials/_media-queries.scss */
+  .footer__block p {
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 50%;
+    top: 5%;
+    font-family: Arial;
+    font-size: 70%;
+    line-height: normal;
+    color: #FFFFFF;
+  }
+  /* line 297, ../scss/partials/_media-queries.scss */
+  .footer__block h5 {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-family: Arial;
+    font-size: 70% x;
+    line-height: normal;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+  }
+}
+/* =====================
+ Desktop
+ ====================*/
+@media only screen and (min-width: 1224px) {
+  /* line 315, ../scss/partials/_media-queries.scss */
+  header {
+    background: #000000;
+  }
+  /* line 317, ../scss/partials/_media-queries.scss */
+  header nav {
+    height: 75px;
+  }
+  /* line 319, ../scss/partials/_media-queries.scss */
+  header nav a {
+    height: 5px;
+  }
+
+  /* line 328, ../scss/partials/_media-queries.scss */
+  .main__block {
+    margin-top: -36%;
+    width: 1280px;
+    height: 500px;
+    left: 0px;
+    top: 77px;
+    background-image: url("../img/banner.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  /* line 338, ../scss/partials/_media-queries.scss */
+  .main__block h1 {
+    top: 60px;
+    position: sticky;
+    margin-top: 33%;
+    margin-left: 10%;
+    width: 50%;
+    font-family: Arial;
+    font-size: 150%;
+    line-height: normal;
+    color: white;
+  }
+
+  /* line 352, ../scss/partials/_media-queries.scss */
+  .search__block {
+    position: absolute;
+    top: 150%;
+    margin-left: 10%;
+    width: 50%;
+  }
+  /* line 357, ../scss/partials/_media-queries.scss */
+  .search__block .search {
+    text-indent: 15px;
+    background: #FFFFFF;
+    border: 1px solid #8E8E8E;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 80%;
+    height: 5%;
+    left: 10%;
+    top: 65%;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: normal;
+    color: #8E8E8E;
+  }
+  /* line 373, ../scss/partials/_media-queries.scss */
+  .search__block .image {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    right: 50px;
+    top: 2%;
+    margin-right: 15%;
+  }
+
+  /* line 383, ../scss/partials/_media-queries.scss */
+  .agent__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2%;
+  }
+  /* line 387, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent {
+    background: #FFFFFF;
+    margin-top: 9%;
+  }
+  /* line 390, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent .agent {
+    /*font*/
+    margin-left: 5%;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: normal;
+    /* borde-light */
+    border-bottom: 1px solid #D8D8D8;
+  }
+  /* line 400, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent .agent .certified {
+    margin-left: 40%;
+    left: 60%;
+    right: 14.03%;
+    top: 4.96%;
+    bottom: 42.12%;
+    border-bottom-color: #000000;
+  }
+  /* line 411, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent p {
+    margin-left: 10%;
+    width: 80%;
+    height: 50%;
+    left: 164px;
+    top: 583px;
+    font-family: Arial;
+    font-size: 95%;
+    line-height: normal;
+    text-align: justify;
+    color: #000000;
+  }
+  /* line 412, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent p .image {
+    float: left;
+    width: 126px;
+    height: 167px;
+  }
+  /* line 432, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent .footer__agent {
+    display: flex;
+    margin-top: 5%;
+  }
+  /* line 435, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent .footer__agent .btn {
+    margin-left: 10%;
+    margin-right: 15%;
+    background: #000000;
+    border-radius: 18px;
+    width: 30%;
+    left: 150%;
+    top: 300%;
+    font-family: Arial;
+    font-size: 100%;
+    line-height: normal;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  /* line 450, ../scss/partials/_media-queries.scss */
+  .agent__block .single__agent .footer__agent h2 {
+    margin-left: 10%;
+    margin-top: 5%;
+    height: 17px;
+    left: 23px;
+    top: 720px;
+    font-family: Arial;
+    font-size: 70%;
+    line-height: normal;
+    color: #000000;
+  }
+
+  /* line 468, ../scss/partials/_media-queries.scss */
+  .footer__block {
+    margin-top: 10%;
+    width: 100%;
+    height: 88px;
+    left: 0px;
+    top: 1054px;
+    background: #000000;
+    display: flex;
+  }
+  /* line 478, ../scss/partials/_media-queries.scss */
+  .footer__block p {
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 50%;
+    top: 5%;
+    font-family: Arial;
+    font-size: 70%;
+    line-height: normal;
+    color: #FFFFFF;
+  }
+  /* line 491, ../scss/partials/_media-queries.scss */
+  .footer__block h5 {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-family: Arial;
+    font-size: 70% x;
+    line-height: normal;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+  }
+}
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+/* line 514, ../scss/partials/_media-queries.scss */
+nav a {
+  float: left;
+  width: 27%;
+  margin: 0 1.7%;
+  padding: 25px 2%;
+  margin-bottom: 0;
+}
+/* line 522, ../scss/partials/_media-queries.scss */
+nav li:first-child a {
+  margin-left: 0;
+}
+/* line 526, ../scss/partials/_media-queries.scss */
+nav li:last-child a {
+  margin-right: 0;
+}
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+/* line 535, ../scss/partials/_media-queries.scss */
+nav ul li {
+  display: inline;
+}
+
+/* line 539, ../scss/partials/_media-queries.scss */
+.oldie nav a {
+  margin: 0 0.7%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* ====================
+      WIDE: CSS3 Effects
+     ==================== */
+  /* line 550, ../scss/partials/_media-queries.scss */
+  .header-container,
+  .main aside {
+    -webkit-box-shadow: 0 5px 10px #aaa;
+    -moz-box-shadow: 0 5px 10px #aaa;
+    box-shadow: 0 5px 10px #aaa;
+  }
+
+  /* ============
+      WIDE: Menu
+     ============ */
+  /* line 561, ../scss/partials/_media-queries.scss */
+  .title {
+    float: left;
+  }
+
+  /* line 565, ../scss/partials/_media-queries.scss */
+  nav {
+    float: right;
+    width: 38%;
+  }
+
+  /* ============
+      WIDE: Main
+     ============ */
+  /* line 575, ../scss/partials/_media-queries.scss */
+  .main article {
+    float: left;
+    width: 57%;
+  }
+  /* line 580, ../scss/partials/_media-queries.scss */
+  .main aside {
+    float: right;
+    width: 28%;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* ===============
+      Maximal Width
+     =============== */
+  /* line 593, ../scss/partials/_media-queries.scss */
+  .wrapper {
+    width: 1026px;
+    /* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  /* line 604, ../scss/partials/_media-queries.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 611, ../scss/partials/_media-queries.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 616, ../scss/partials/_media-queries.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 620, ../scss/partials/_media-queries.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 628, ../scss/partials/_media-queries.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 634, ../scss/partials/_media-queries.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 640, ../scss/partials/_media-queries.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 644, ../scss/partials/_media-queries.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 649, ../scss/partials/_media-queries.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  /* line 657, ../scss/partials/_media-queries.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 664, ../scss/partials/_media-queries.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
