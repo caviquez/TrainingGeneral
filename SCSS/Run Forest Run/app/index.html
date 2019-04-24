@@ -22,12 +22,16 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <scrip src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></scrip>
 </head>
+
 
 <body>
     <!-- build:remove -->
     <span id="browser-sync-binding"></span>
     <!-- endbuild -->
+
+    <!--Mustage-->
         <div class="header">
             <img class="header__logo" src="img/logo.png">
             <img class="header__menu" src="img/menu.png">
@@ -46,126 +50,37 @@
         <input class="search__input" type="search" placeholder="Buscar por Ubicacion">
         <img class="search__image" src="img/lupa.png">
     </div>
-    <div class="agent-container">
-        <div class="agent-container__agent-item">
-            <div class="agent-container__agent-item__header">
-                <h2 class="agent-container__agent-item__header__agent-name"> Chuck Norris Bodyguards</h2>
-                <img src="img/certified.png">
+    <div class="agent-container" id="a">
+        <script type="mustache/x-tmpl" id="agent-tmpl">
+            <div class="agent-container__agent-item">
+                <div class="agent-container__agent-item__header">
+                    <h2 class="agent-container__agent-item__header__agent-name">{{name}}</h2>
+                    <img src="img/certified.png">
+                </div>
+                <div class="agent-container__agent-item__body">
+                    <img src="img/imagechuck.png">
+                    <p class="agent-container__agent-item__body__agent-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit
+                        tristique accumsan nec at enim. Etiam posuere tellus ut ligula
+                        feugiat auctor. Morbi ut quam aliquet, viverra purus in, convallis ante.
+                    </p>
+                </div>
+                <div class="agent-container__agent-item__footer">
+                    <h2 class="agent-container__agent-item__footer__price-description"> Desde: $15/ 12 horas</h2>
+                    <button class="agent-container__agent-item__footer__btn-buy" type="button">Contratar</button>
+                </div>
             </div>
-            <div class="agent-container__agent-item__body">
-                <img src="img/imagechuck.png">
-                <p class="agent-container__agent-item__body__agent-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit
-                    tristique accumsan nec at enim. Etiam posuere tellus ut ligula
-                    feugiat auctor. Morbi ut quam aliquet, viverra purus in, convallis ante.
-                </p>
-            </div>
-            <div class="agent-container__agent-item__footer">
-                <h2 class="agent-container__agent-item__footer__price-description"> Desde: $15/ 12 horas</h2>
-                <button class="agent-container__agent-item__footer__btn-buy" type="button">Contratar</button>
-            </div>
-        </div>
+        </script>
+        <script>
+            var agent = {name: "Chuck Norris Bodyguards"};
+            var tmpl = document.getElementById("agent-tmpl").innerHTML;
+            var html = Mustache.to_html(tmpl, agent);
+            var box = document.getElementById("box");
+            a.innerHTML = html;
+        
+        </script>
 
-        <div class="agent-container__agent-item">
-            <div class="agent-container__agent-item__header">
-                <h2 class="agent-container__agent-item__header__agent-name"> Chuck Norris Bodyguards</h2>
-                <img src="img/certified.png">
-            </div>
-            <div class="agent-container__agent-item__body">
-                <img src="img/imagechuck.png">
-                <p class="agent-container__agent-item__body__agent-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit
-                    tristique accumsan nec at enim. Etiam posuere tellus ut ligula
-                    feugiat auctor. Morbi ut quam aliquet, viverra purus in, convallis ante.
-                </p>
-            </div>
-            <div class="agent-container__agent-item__footer">
-                <h2 class="agent-container__agent-item__footer__price-description"> Desde: $15/ 12 horas</h2>
-                <button class="agent-container__agent-item__footer__btn-buy" type="button">Contratar</button>
-            </div>
-        </div>
-
-        <div class="agent-container__agent-item">
-            <div class="agent-container__agent-item__header">
-                <h2 class="agent-container__agent-item__header__agent-name"> Chuck Norris Bodyguards</h2>
-                <img src="img/certified.png">
-            </div>
-            <div class="agent-container__agent-item__body">
-                <img src="img/imagechuck.png">
-                <p class="agent-container__agent-item__body__agent-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit
-                    tristique accumsan nec at enim. Etiam posuere tellus ut ligula
-                    feugiat auctor. Morbi ut quam aliquet, viverra purus in, convallis ante.
-                </p>
-            </div>
-            <div class="agent-container__agent-item__footer">
-                <h2 class="agent-container__agent-item__footer__price-description"> Desde: $15/ 12 horas</h2>
-                <button class="agent-container__agent-item__footer__btn-buy" type="button">Contratar</button>
-            </div>
-        </div>
-
-        <div class="agent-container__agent-item">
-            <div class="agent-container__agent-item__header">
-                <h2 class="agent-container__agent-item__header__agent-name"> Chuck Norris Bodyguards</h2>
-                <img src="img/certified.png">
-            </div>
-            <div class="agent-container__agent-item__body">
-                <img src="img/imagechuck.png">
-                <p class="agent-container__agent-item__body__agent-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit
-                    tristique accumsan nec at enim. Etiam posuere tellus ut ligula
-                    feugiat auctor. Morbi ut quam aliquet, viverra purus in, convallis ante.
-                </p>
-            </div>
-            <div class="agent-container__agent-item__footer">
-                <h2 class="agent-container__agent-item__footer__price-description"> Desde: $15/ 12 horas</h2>
-                <button class="agent-container__agent-item__footer__btn-buy" type="button">Contratar</button>
-            </div>
-        </div>
-
-        <div class="agent-container__agent-item">
-            <div class="agent-container__agent-item__header">
-                <h2 class="agent-container__agent-item__header__agent-name"> Chuck Norris Bodyguards</h2>
-                <img src="img/certified.png">
-            </div>
-            <div class="agent-container__agent-item__body">
-                <img src="img/imagechuck.png">
-                <p class="agent-container__agent-item__body__agent-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit
-                    tristique accumsan nec at enim. Etiam posuere tellus ut ligula
-                    feugiat auctor. Morbi ut quam aliquet, viverra purus in, convallis ante.
-                </p>
-            </div>
-            <div class="agent-container__agent-item__footer">
-                <h2 class="agent-container__agent-item__footer__price-description"> Desde: $15/ 12 horas</h2>
-                <button class="agent-container__agent-item__footer__btn-buy" type="button">Contratar</button>
-            </div>
-        </div>
-
-        <div class="agent-container__agent-item">
-            <div class="agent-container__agent-item__header">
-                <h2 class="agent-container__agent-item__header__agent-name"> Chuck Norris Bodyguards</h2>
-                <img src="img/certified.png">
-            </div>
-            <div class="agent-container__agent-item__body">
-                <img src="img/imagechuck.png">
-                <p class="agent-container__agent-item__body__agent-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit
-                    tristique accumsan nec at enim. Etiam posuere tellus ut ligula
-                    feugiat auctor. Morbi ut quam aliquet, viverra purus in, convallis ante.
-                </p>
-            </div>
-            <div class="agent-container__agent-item__footer">
-                <h2 class="agent-container__agent-item__footer__price-description"> Desde: $15/ 12 horas</h2>
-                <button class="agent-container__agent-item__footer__btn-buy" type="button">Contratar</button>
-            </div>
-        </div>
     </div>
 
 
@@ -177,6 +92,7 @@
 
     <script src="js/vendor/jquery-1.10.1.min.js"></script>
     <script src="js/main.js"></script>
+
 
 
     <!-- Live reload option. Remove in production environments -->
