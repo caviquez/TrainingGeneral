@@ -295,6 +295,34 @@
    ====================*/
    @media only screen and (min-width : 1224px) {
 
+    .header  {
+        &__nav  {
+            width: 400px;
+            &__items  {
+                display: flex;
+                li {
+                    margin-right: 5%;
+                    display: block;
+                    a  {
+                        width: 100%;
+                        display: inline;
+                    }
+                }
+            
+            }
+        }
+
+        &__logo {
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        &__menu  {
+            display: none;
+        }
+    }
+
+
     .cover  {
         height: 536px;
     }
