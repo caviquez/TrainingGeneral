@@ -17,10 +17,6 @@
     Column main definition
 =============================*/
 
-h1  {
-  text-align: center;
-}
-
 .main-container {
   margin: 25px;
   border: 25px;
@@ -28,33 +24,21 @@ h1  {
   content: 25px;
 }
 
-.column  {
-    position: relative;
-    float: left;
-	width: 20%;
-	padding: 10px;
-    height: 300px;
-    margin: 50px;
-}
 
 /* ==========================================================================
-   Independent Columns
+   Independent Columns fonts
    ========================================================================== */
 .facebook  {
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgba(0, 0, 255, 0.815);
-
 }
 
 .twitter  {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(0, 174, 255); 
 }
 
 
 .instagram  {
     font-family: 'Nunito', sans-serif;  
-    background-color: rgba(165, 77, 42, 0.815); 
 }
 
 .fab  {
@@ -149,7 +133,6 @@ a:hover  {
     
   }
 
-/* =====================
    Desktop
    ====================*/
    @media only screen and (min-width: 1024px) {
@@ -161,7 +144,6 @@ a:hover  {
         height: 300px;
         margin: 50px;
         font-size: 12px;
-        
     }
 
     .tittle  {
@@ -181,4 +163,7 @@ a:hover  {
         background-color: rgba(165, 77, 42, 0.815); 
     }
    
+
+  }
+
   }
