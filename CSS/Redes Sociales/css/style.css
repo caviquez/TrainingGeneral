@@ -42,10 +42,10 @@
 }
 
 .fab  {
-    font-size: 48px;
+    font-size: 40px;
     position: absolute;
-    margin-left: 100px;
-    bottom: 20px;
+    margin-left: 50%;
+    bottom: 10%;
 }
 
 /* ==========================================================================
@@ -70,7 +70,7 @@ a:hover  {
 /* =====================
    Mobile phones
   ====================*/ 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 360px) {
     .column {
       position: relative;
       width: 50%;
@@ -78,6 +78,7 @@ a:hover  {
       height: 20%;
       margin: 10%;
       content: 10%;
+      font-size: 9px;
     }
 
     .tittle  {
@@ -132,10 +133,9 @@ a:hover  {
     
   }
 
-/* =====================
-   Mobile phones
+   Desktop
    ====================*/
-   @media only screen and (min-width: 768px) {
+   @media only screen and (min-width: 1024px) {
     .column  {
         position: relative;
         float: left;
@@ -143,6 +143,7 @@ a:hover  {
         padding: 10px;
         height: 300px;
         margin: 50px;
+        font-size: 12px;
     }
 
     .tittle  {
@@ -162,4 +163,7 @@ a:hover  {
         background-color: rgba(165, 77, 42, 0.815); 
     }
    
+
+  }
+
   }
