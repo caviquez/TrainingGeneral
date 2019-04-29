@@ -11,33 +11,71 @@
  * Description: POKEMON asignation.
  */
 
+
+
+
+ /**
+ * This method purpose is to create a new pokemon instance according to the information in
+ * the section indicated as a parameter.
+ * @return {void} it doesn't return anything.
+ * @public
+ */
 function Pokemon (p_name, p_type, p_attack, p_defense) {
     this.name = p_name;
     this.type = p_type;
     this.attack = p_attack;
     this.defense = p_defense;
 }
-    
 
-function battle (pokemon1, pokemon2){
-    var effectiveness;
-    if(pokemon1.type == "fire" && pokemon2.type == "grass" || pokemon1.type == "water" && pokemon2.type == "grass"){
-        effectiveness = 2;
-        return demage(pokemon1, pokemon2, effectiveness);
-    }else{
-        if(pokemon1.type == "fire" && pokemon2.type == "water" || pokemon1.type == "water" && pokemon2.type == "electric"){
-            effectiveness = 0.5;
-            return demage(pokemon1, pokemon2, effectiveness);
-        }else{
-            if(pokemon1.type == "fire" && pokemon2.type == "electric" || pokemon1.type == "grass" && pokemon2.type == "electric"){
-                effectiveness = 1;
-                return demage(pokemon1, pokemon2, effectiveness);
-            }
-        }
+/**
+ * This method purpose is to create a board that contains the rules for the effectiveness
+ * @return {void} it doesn't return anything.
+ * @public
+ */
+var battle_rules = {
+    "fire" : {
+        "grass": 2,
+        "water": 0.5,
+        "electric": 1
+    },
+    "grass": {
+        "fire": 2,
+        "water": 0.5,
+        "electric": 1
+    },
+    "water": {
+        "fire": 0.2,
+        "grass": 0.5,
+        "electric": 0.5
+    },
+    "electric": {
+        "fire": 1,
+        "grass": 1,
+        "electric": 0.5
     }
 }
 
 
+/**
+ * This method purpose is to obtain the effectiveness of an attack.
+ * This call the function demage with the effectiveness value
+ * @return {void} it doesn't return anything.
+ * @public
+ */
+function battle (pokemon1, pokemon2)  {
+    var defaul_value = 1;
+    var effectiveness = battle_rules[pokemon1.type][pokemon2.type]|| defaul_value;
+    demage(pokemon1, pokemon2, effectiveness);
+
+}
+
+
+/**
+ * This method receives as parametter the two pokemons and the effectiveness value
+ * The result is the demage value, this is calculated by a math formula 
+ * @return {void} it doesn't return anything.
+ * @public
+ */
 function demage (pokemon1, pokemon2, effectiveness){
     var demage = Math. round(50 * (pokemon1.attack / pokemon2.defense) * effectiveness);
     return demage;  
