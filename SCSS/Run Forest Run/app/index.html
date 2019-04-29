@@ -31,6 +31,8 @@
     <span id="browser-sync-binding"></span>
     <!-- endbuild -->
 
+
+    
     <!--Mustage-->
         <div class="header">
             <img class="header__logo" src="img/logo.png">
@@ -69,6 +71,7 @@
                 </div>
             {{/agentList}}
         </script>
+        
         <script>
             var agent = {
                 name: "Chuck Norris Bodyguards", 
@@ -88,9 +91,35 @@
             box.innerHTML = html;
         
         </script>
+        
 
     </div>
+    
 
+    <script>
+        
+            const promise = new Promise((resolve, reject) => {
+                const request = new XMLHttpRequest();
+                request.open('GET', 'https://api.myjson.com/bins/uptto',true);
+                request.onload = () =>  {
+                    if (request.status === 200)  { //200 means that the request has succeeded.
+                        resolve(request.response);
+                        console.log(request.response);
+                    }else{
+                        reject(Error(request.statusText));
+                    }
+                }
+            });
+    
+            promise.then((data) => {
+                console.log('Got data! Promise fulfilled.');
+                document.body.textContent = JSON.parse(data).companies.name;
+            }, (error) => {
+                console.log('Promise reject');
+                console.log(error.message);
+            });
+    </script>
+    
 
     <footer class="footer">
         <p class="footer__develop">Desarrollado por Akurey.com Todos los derechos reservados.</p>
@@ -108,3 +137,7 @@
 </body>
 
 </html>
+
+<!--https://davidwalsh.name/write-javascript-promises-->
+
+
