@@ -1,0 +1,755 @@
+/*!
+ * All Rights Reserved
+ * This software is proprietary information of
+ * Intelligent Sense
+ * Use is subject to license terms.
+ * Filename: style.scss
+ */
+/*
+ * Author:      kchaves@intelligentsense.com
+ * Date:        28/10/2013
+ * Description: Main COMPASS file. Import all the partials you need here.
+ */
+/**
+* Mixin for image replacement
+*/
+/* ===================
+    ALL: Fonts
+   =================== */
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 26, ../scss/partials/_general.scss */
+.clear {
+  clear: both;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+/* line 34, ../scss/partials/_general.scss */
+.header-container {
+  border-bottom: 20px solid black;
+}
+
+/* line 38, ../scss/partials/_general.scss */
+.footer-container,
+.main aside {
+  border-top: 20px solid black;
+}
+
+/* line 43, ../scss/partials/_general.scss */
+.header-container,
+.footer-container,
+.main aside {
+  background: black;
+}
+
+/* line 49, ../scss/partials/_general.scss */
+.title {
+  color: white;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/* line 57, ../scss/partials/_general.scss */
+.ir {
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+  *text-indent: -9999px;
+}
+
+/* line 65, ../scss/partials/_general.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/* line 72, ../scss/partials/_general.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 77, ../scss/partials/_general.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 88, ../scss/partials/_general.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 98, ../scss/partials/_general.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 102, ../scss/partials/_general.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 108, ../scss/partials/_general.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 112, ../scss/partials/_general.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 18, ../scss/partials/_header.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 23, ../scss/partials/_header.scss */
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  font-family: Arial, sans;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: black;
+}
+/* line 37, ../scss/partials/_header.scss */
+nav a:hover,
+nav a:visited {
+  color: white;
+}
+/* line 42, ../scss/partials/_header.scss */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* line 18, ../scss/partials/_footer.scss */
+.footer-container footer {
+  color: white;
+  padding: 20px 0;
+}
+
+/* line 16, ../scss/partials/_content.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #221;
+}
+
+/* line 24, ../scss/partials/_content.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 29, ../scss/partials/_content.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 34, ../scss/partials/_content.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 39, ../scss/partials/_content.scss */
+hr {
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+/* line 49, ../scss/partials/_content.scss */
+h1 {
+  font-family: Arial, sans;
+}
+
+/* line 53, ../scss/partials/_content.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 57, ../scss/partials/_content.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 63, ../scss/partials/_content.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 67, ../scss/partials/_content.scss */
+body {
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+/* line 71, ../scss/partials/_content.scss */
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+/* line 80, ../scss/partials/_content.scss */
+.main {
+  padding: 30px 0;
+}
+/* line 85, ../scss/partials/_content.scss */
+.main article h1 {
+  font-size: 2em;
+}
+/* line 90, ../scss/partials/_content.scss */
+.main aside {
+  color: white;
+  padding: 0px 5% 10px;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+@media only screen and (max-width: 1224px) {
+  /* Styles */
+}
+/* Desktops and laptops ----------- */
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+/* Retina Display ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
+/* =====================
+   Mobile phones
+  ====================*/
+@media only screen and (min-width: 310px) {
+  /* line 73, ../scss/partials/_media-queries.scss */
+  .header {
+    height: 77px;
+    background: #000000;
+  }
+  /* line 77, ../scss/partials/_media-queries.scss */
+  .header li {
+    display: none;
+  }
+  /* line 81, ../scss/partials/_media-queries.scss */
+  .header__logo {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  /* line 86, ../scss/partials/_media-queries.scss */
+  .header__menu {
+    position: absolute;
+    right: 8px;
+    height: 73px;
+    width: 73px;
+  }
+
+  /* line 94, ../scss/partials/_media-queries.scss */
+  .cover {
+    height: 250px;
+    background-image: url("../img/banner-mobile.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* line 102, ../scss/partials/_media-queries.scss */
+  .search {
+    margin-left: 10%;
+  }
+  /* line 105, ../scss/partials/_media-queries.scss */
+  .search__title {
+    font-size: 24px;
+    line-height: normal;
+    width: 80%;
+    color: black;
+  }
+  /* line 113, ../scss/partials/_media-queries.scss */
+  .search__input {
+    background: #FFFFFF;
+    border: 1px solid #8E8E8E;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 90%;
+    height: 44px;
+    font-size: 18px;
+    line-height: normal;
+    color: #8E8E8E;
+    text-indent: 10px;
+  }
+  /* line 127, ../scss/partials/_media-queries.scss */
+  .search__image {
+    width: 23px;
+    height: 23px;
+    margin-left: -40px;
+    margin-bottom: 5px;
+  }
+
+  /* line 136, ../scss/partials/_media-queries.scss */
+  .agent-container {
+    width: 90%;
+    margin-left: 6%;
+  }
+  /* line 140, ../scss/partials/_media-queries.scss */
+  .agent-container__agent-item {
+    margin-top: 10px;
+  }
+  /* line 143, ../scss/partials/_media-queries.scss */
+  .agent-container__agent-item__header {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #D8D8D8;
+  }
+  /* line 148, ../scss/partials/_media-queries.scss */
+  .agent-container__agent-item__header__agent-name {
+    margin-left: 2%;
+    font-size: 18px;
+    line-height: normal;
+  }
+  /* line 156, ../scss/partials/_media-queries.scss */
+  .agent-container__agent-item__body {
+    display: flex;
+  }
+  /* line 158, ../scss/partials/_media-queries.scss */
+  .agent-container__agent-item__body__agent-description {
+    margin-left: 10%;
+    width: 80%;
+    height: 50%;
+    font-size: 12px;
+    line-height: normal;
+    text-align: justify;
+    color: #000000;
+  }
+  /* line 169, ../scss/partials/_media-queries.scss */
+  .agent-container__agent-item__footer {
+    display: flex;
+  }
+  /* line 172, ../scss/partials/_media-queries.scss */
+  .agent-container__agent-item__footer__price-description {
+    font-size: 14px;
+    line-height: normal;
+    color: #000000;
+  }
+  /* line 178, ../scss/partials/_media-queries.scss */
+  .agent-container__agent-item__footer__btn-buy {
+    margin-left: 5%;
+    background: #000000;
+    border-radius: 18px;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 156px;
+    height: 34px;
+  }
+
+  /* line 193, ../scss/partials/_media-queries.scss */
+  .footer {
+    width: 100%;
+    height: 88px;
+    top: 1054px;
+    display: inline-block;
+    background: #000000;
+  }
+  /* line 200, ../scss/partials/_media-queries.scss */
+  .footer__develop {
+    margin-left: 10px;
+    width: 184px;
+    height: 28px;
+    font-size: 12px;
+    line-height: normal;
+    color: #FFFFFF;
+  }
+  /* line 209, ../scss/partials/_media-queries.scss */
+  .footer__terms {
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: normal;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+  }
+}
+/* =====================
+   Mobile tablets
+   ====================*/
+@media only screen and (min-width: 768px) {
+  /* line 225, ../scss/partials/_media-queries.scss */
+  .cover {
+    height: 304px;
+    background-image: url("../img/banner.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* line 233, ../scss/partials/_media-queries.scss */
+  .search {
+    position: absolute;
+    top: 210px;
+    width: 700px;
+  }
+  /* line 238, ../scss/partials/_media-queries.scss */
+  .search__title {
+    font-size: 24px;
+    line-height: normal;
+    width: 35%;
+    color: white;
+  }
+
+  /* line 247, ../scss/partials/_media-queries.scss */
+  .agent-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1%;
+  }
+  /* line 252, ../scss/partials/_media-queries.scss */
+  .agent-container__agent-item {
+    margin-right: 10%;
+  }
+
+  /* line 257, ../scss/partials/_media-queries.scss */
+  .footer {
+    margin-top: 10%;
+    width: 100%;
+    height: 88px;
+    left: 0px;
+    top: 1054px;
+    background: #000000;
+    display: flex;
+  }
+  /* line 267, ../scss/partials/_media-queries.scss */
+  .footer__develop {
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 50%;
+    top: 5%;
+    font-family: Arial;
+    font-size: 70%;
+    line-height: normal;
+    color: #FFFFFF;
+  }
+  /* line 280, ../scss/partials/_media-queries.scss */
+  .footer__terms {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-family: Arial;
+    font-size: 70% x;
+    line-height: normal;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+  }
+}
+/* =====================
+ Desktop
+ ====================*/
+@media only screen and (min-width: 1224px) {
+  /* line 299, ../scss/partials/_media-queries.scss */
+  .header__nav {
+    width: 400px;
+  }
+  /* line 301, ../scss/partials/_media-queries.scss */
+  .header__nav__items {
+    display: flex;
+  }
+  /* line 303, ../scss/partials/_media-queries.scss */
+  .header__nav__items li {
+    margin-right: 5%;
+    display: block;
+  }
+  /* line 306, ../scss/partials/_media-queries.scss */
+  .header__nav__items li a {
+    width: 100%;
+    display: inline;
+  }
+  /* line 315, ../scss/partials/_media-queries.scss */
+  .header__logo {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  /* line 320, ../scss/partials/_media-queries.scss */
+  .header__menu {
+    display: none;
+  }
+
+  /* line 326, ../scss/partials/_media-queries.scss */
+  .cover {
+    height: 536px;
+  }
+
+  /* line 330, ../scss/partials/_media-queries.scss */
+  .search {
+    position: absolute;
+    top: 302px;
+    width: 574px;
+  }
+  /* line 335, ../scss/partials/_media-queries.scss */
+  .search__title {
+    font-size: 36px;
+    line-height: normal;
+    width: 108%;
+    color: white;
+  }
+
+  /* line 344, ../scss/partials/_media-queries.scss */
+  .agent-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1%;
+  }
+
+  /* line 351, ../scss/partials/_media-queries.scss */
+  .footer {
+    margin-top: 10%;
+    width: 100%;
+    height: 88px;
+    left: 0px;
+    top: 1054px;
+    background: #000000;
+    display: flex;
+  }
+  /* line 361, ../scss/partials/_media-queries.scss */
+  .footer__develop {
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 50%;
+    top: 5%;
+    font-family: Arial;
+    font-size: 70%;
+    line-height: normal;
+    color: #FFFFFF;
+  }
+  /* line 374, ../scss/partials/_media-queries.scss */
+  .footer__terms {
+    margin-left: 30%;
+    margin-top: 3%;
+    font-family: Arial;
+    font-size: 70%;
+    line-height: normal;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+  }
+}
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+/* line 397, ../scss/partials/_media-queries.scss */
+nav a {
+  float: left;
+  width: 27%;
+  margin: 0 1.7%;
+  padding: 25px 2%;
+  margin-bottom: 0;
+}
+/* line 405, ../scss/partials/_media-queries.scss */
+nav li:first-child a {
+  margin-left: 0;
+}
+/* line 409, ../scss/partials/_media-queries.scss */
+nav li:last-child a {
+  margin-right: 0;
+}
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+/* line 418, ../scss/partials/_media-queries.scss */
+nav ul li {
+  display: inline;
+}
+
+/* line 422, ../scss/partials/_media-queries.scss */
+.oldie nav a {
+  margin: 0 0.7%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* ====================
+      WIDE: CSS3 Effects
+     ==================== */
+  /* line 433, ../scss/partials/_media-queries.scss */
+  .header-container,
+  .main aside {
+    -webkit-box-shadow: 0 5px 10px #aaa;
+    -moz-box-shadow: 0 5px 10px #aaa;
+    box-shadow: 0 5px 10px #aaa;
+  }
+
+  /* ============
+      WIDE: Menu
+     ============ */
+  /* line 444, ../scss/partials/_media-queries.scss */
+  .title {
+    float: left;
+  }
+
+  /* line 448, ../scss/partials/_media-queries.scss */
+  nav {
+    float: right;
+    width: 38%;
+  }
+
+  /* ============
+      WIDE: Main
+     ============ */
+  /* line 458, ../scss/partials/_media-queries.scss */
+  .main article {
+    float: left;
+    width: 57%;
+  }
+  /* line 463, ../scss/partials/_media-queries.scss */
+  .main aside {
+    float: right;
+    width: 28%;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* ===============
+      Maximal Width
+     =============== */
+  /* line 476, ../scss/partials/_media-queries.scss */
+  .wrapper {
+    width: 1026px;
+    /* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  /* line 487, ../scss/partials/_media-queries.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 494, ../scss/partials/_media-queries.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 499, ../scss/partials/_media-queries.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 503, ../scss/partials/_media-queries.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 511, ../scss/partials/_media-queries.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 517, ../scss/partials/_media-queries.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 523, ../scss/partials/_media-queries.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 527, ../scss/partials/_media-queries.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 532, ../scss/partials/_media-queries.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  /* line 540, ../scss/partials/_media-queries.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 547, ../scss/partials/_media-queries.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
