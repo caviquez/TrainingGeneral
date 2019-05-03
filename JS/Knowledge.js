@@ -32,7 +32,7 @@ function Pokemon (p_name, p_type, p_attack, p_defense) {
  * @return {void} it doesn't return anything.
  * @public
  */
-var battle_rules = {
+var rules = {
     "fire" : {
         "grass": 2,
         "water": 0.5,
@@ -64,8 +64,8 @@ var battle_rules = {
  */
 function battle (pokemon1, pokemon2)  {
     var defaul_value = 1;
-    var effectiveness = battle_rules[pokemon1.type][pokemon2.type]|| defaul_value;
-    demage(pokemon1, pokemon2, effectiveness);
+    var effectiveness = rules[pokemon1.type][pokemon2.type]|| defaul_value;
+    return demage(pokemon1, pokemon2, effectiveness);
 
 }
 
@@ -84,7 +84,7 @@ function demage (pokemon1, pokemon2, effectiveness){
 
 pokemon1 = new Pokemon ("Charizard", "fire", 84, 78);
 pokemon2 = new Pokemon ("Bulbasaur", "grass", 49, 49);
-console.log(battle(pokemon1, pokemon2))
+console.log(battle(pokemon1, pokemon2));
 
 
 
