@@ -21,4 +21,14 @@ export class MainContentComponent implements OnInit {
     )
   }
 
+
+  modelChanged(e)  {
+    if(e.length >= 3) {
+      this.agentFilter.name = String(e);
+    }else{
+      this.agentFilter.name = '';
+      console.log(this.agentFilter.name);
+    }
+  }
+
 }
