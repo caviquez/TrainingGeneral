@@ -9,6 +9,12 @@ import { FooterComponent } from './footer/footer.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
+//Imports for FilterPipemodule https://www.npmjs.com/package/ngx-filter-pipe
+import { FilterPipeModule } from 'ngx-filter-pipe';
+import { FormsModule } from '@angular/forms';
+
+
+
 
 @NgModule({
   declarations: [
@@ -20,7 +26,9 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FilterPipeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
