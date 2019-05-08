@@ -41,7 +41,7 @@ var obtain_agent = function () {
             console.log(error.message);
         });
 }
-obtain_agent();
+
 
 /*This function has the purpose of take the input agent 
 fron the search bar and fine the agent on agents list*/
@@ -54,4 +54,4 @@ function search_agent ()  {
     box.innerHTML = html;
 }
 
-
+window.onload = obtain_agent;
