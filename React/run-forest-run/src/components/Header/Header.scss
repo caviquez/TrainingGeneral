@@ -1,0 +1,82 @@
+/* =====================
+   Mobile phones 
+  ====================*/ 
+  @media only screen and (min-width: 310px) {
+    .header  {
+        height: 77px;
+        background: #000000;
+
+        &__nav  {
+            display: none;
+        }
+
+        li {
+            display: none
+        }
+
+        &__logo {
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        &__menu  {
+            position: absolute;
+            right: 8px;
+            height: 73px;
+            width: 73px;
+        }
+    }
+}
+/* =====================
+   Mobile tablets 
+  ====================*/ 
+  @media only screen and (min-width : 768px) {
+    .header  {
+        height: 77px;
+        background: #000000;
+        
+        &__logo {
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        &__menu  {
+            position: absolute;
+            right: 8px;
+            height: 73px;
+            width: 73px;
+        }
+    }
+}
+
+/* =====================
+   Desktop
+   ====================*/
+    @media only screen and (min-width : 1224px) {
+    .header  {
+        &__nav  {
+            width: 400px;
+            &__items  {
+                display: flex;
+                li {
+                    margin-right: 5%;
+                    display: block;
+                    a  {
+                        width: 100%;
+                        display: inline;
+                    }
+                }
+            
+            }
+        }
+
+        &__logo {
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        &__menu  {
+            display: none;
+        }
+    }
+}
