@@ -1,0 +1,169 @@
+/*!
+ * All Rights Reserved
+ * This software is proprietary information of
+ * Intelligent Sense
+ * Use is subject to license terms.
+ * Filename: style.scss
+ */
+/*
+ * Author:      cviquez@intelligentsense.com
+ * Date:        03/04/2019
+ * Description: Main COMPASS file. Import all the partials you need here.
+ */
+/**
+* Mixin for image replacement
+*/
+/* ==========================
+    Column main definition
+=============================*/
+
+.main-container {
+  margin: 25px;
+  border: 25px;
+  padding: 25px;
+  content: 25px;
+}
+
+
+/* ==========================================================================
+   Independent Columns fonts
+   ========================================================================== */
+.facebook  {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.twitter  {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.instagram  {
+    font-family: 'Nunito', sans-serif;  
+}
+
+.fab  {
+    font-size: 40px;
+    position: absolute;
+    margin-left: 50%;
+    bottom: 10%;
+}
+
+/* ==========================================================================
+   Icon Style
+   ========================================================================== */
+
+a  {
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+}
+
+a:hover  {
+    color: burlywood;
+
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+/* =====================
+   Mobile phones
+  ====================*/ 
+@media only screen and (min-width: 360px) {
+    .column {
+      position: relative;
+      width: 50%;
+      padding: 10%;
+      height: 20%;
+      margin: 10%;
+      content: 10%;
+      font-size: 9px;
+    }
+
+    .tittle  {
+        width: 100%;
+        text-align: center;
+    }
+
+    .facebook  {
+        background-color: #27782d;
+    }
+
+    .twitter  {
+        background-color: #f42929;
+    }
+
+    .instagram  {
+        background-color: #782740;
+    }
+
+  }
+
+
+/* =====================
+   Mobile tablets
+   ====================*/
+@media only screen and (min-width: 600px) {
+    .column  {
+        position: relative;
+        float: left;
+        width: 20%;
+        padding: 10px;
+        height: 300px;
+        margin: 50px;
+    }
+
+    .tittle  {
+        width: 100%;
+        text-align: center;
+    }
+
+    .facebook  {
+        background-color: rgba(0, 0, 255, 0.815);
+    }
+
+    .twitter  {
+        background-color: rgb(0, 174, 255); 
+    }
+
+    .instagram  {
+        background-color: rgba(165, 77, 42, 0.815); 
+    }
+    
+  }
+/* =====================
+   Desktop
+   ====================*/
+   @media only screen and (min-width: 1024px) {
+    .column  {
+        position: relative;
+        float: left;
+        width: 20%;
+        padding: 10px;
+        height: 300px;
+        margin: 50px;
+        font-size: 12px;
+    }
+
+    .tittle  {
+        width: 100%;
+        text-align: center;
+    }
+
+    .facebook  {
+        background-color: rgba(0, 0, 255, 0.815);
+    }
+
+    .twitter  {
+        background-color: rgb(0, 174, 255); 
+    }
+
+    .instagram  {
+        background-color: rgba(165, 77, 42, 0.815); 
+    }
+   
+
+  }
+
+  
