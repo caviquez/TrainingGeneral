@@ -24,6 +24,7 @@ export class MainContentComponent implements OnInit {
     )
   }
 
+  /*The purpose of this functio if to generate an array with the compannies that come from Json*/
   setAgents(companies) {
     this.agents = companies.companies;
   }
