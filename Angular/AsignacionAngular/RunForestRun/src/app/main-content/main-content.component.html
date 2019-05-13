@@ -1,0 +1,24 @@
+<div class="cover">
+  </div>
+  <div class="search">
+      <h1 class="search__title">Los Mejores agentes de seguridad</h1>
+      <input class="search__input" id="search_input" type="search" placeholder="Buscar por Ubicacion" [(ngModel)]="agentFilter.name" (ngModelChange)="modelChanged($event)">
+      <img class="search__image" src="../../assets/img/lupa.png" onclick="">
+  </div>
+<div class="agent-container" id="agent-container" *ngIf="agents$" > 
+    <div class="agent-container__agent-item"  *ngFor="let agent of agents$.companies | filterBy: agentFilter">
+        <div class="agent-container__agent-item__header">
+            <h2 class="agent-container__agent-item__header__agent-name">{{agent.name}}</h2>
+            <img src="../../assets/img/certified.png">
+        </div>
+        <div class="agent-container__agent-item__body">
+            <img src="../../assets/img/imagechuck.png">
+            <p class="agent-container__agent-item__body__agent-description">{{agent.description}}</p>
+        </div>
+        <div class="agent-container__agent-item__footer">
+            <h2 class="agent-container__agent-item__footer__price-description">Desde ${{agent.rate}} {{agent.hours}}/hrs</h2>
+            <button class="agent-container__agent-item__footer__btn-buy" type="button">Contratar</button>
+        </div>
+    </div>
+</div>
+
