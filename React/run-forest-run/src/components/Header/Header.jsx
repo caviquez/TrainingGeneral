@@ -1,12 +1,15 @@
 import React from 'react';
-import './Header.jsx';
 import './Header.scss';
-class App extends React.Component {
+//Images
+import logo from '../../assets/img/logo.png';
+import menu from '../../assets/img/menu.png';
+
+class Header extends React.Component {
   render()  {
     return (
      <div class="header">
-        <img class="header__logo" src="./../../assets/img/logo.png"></img>
-        <img class="header__menu" src="../../assets/img/menu.png"></img>
+        <img class="header__logo" src={logo}></img>
+        <img class="header__menu" src={menu}></img>
         <nav class="header__nav">
             <ul class="header__nav__items">
                 <li><a href="#">Directorios de agentes</a></li>
@@ -19,4 +22,4 @@ class App extends React.Component {
     );
   }
 }
-export default App;
+export default Header;
